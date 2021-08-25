@@ -1,0 +1,67 @@
+@import "_colors.scss";
+@import "_globales.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(236, 236, 236);
+  font-family: "Roboto Mono", monospace;
+}
+
+.header {
+  .header__nav {
+    background-color: $principal;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .header__nav__items {
+      display: flex;
+      justify-content: space-between;
+
+      .nav__items__link {
+        list-style-type: none;
+        color: #fff;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+
+  .main__grid {
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+
+    .main__grid__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secundario;
+  height: 220px;
+  margin-top: 30px;
+
+  .footer__text {
+    margin: 0 10px;
+    text-align: center;
+  }
+}
